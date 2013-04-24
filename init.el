@@ -35,6 +35,8 @@
 
 (message "Prelude is powering up... Be patient, Master %s!" (getenv "USER"))
 
+(scroll-bar-mode -1)
+
 (defvar prelude-dir (file-name-directory load-file-name)
   "The root dir of the Emacs Prelude distribution.")
 (defvar prelude-core-dir (expand-file-name "core" prelude-dir)
