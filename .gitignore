@@ -17,3 +17,6 @@ places
 savefile/
 /prelude-modules.el
 projectile-bookmarks.eld
+.mc-lists.el
+/var
+tramp
