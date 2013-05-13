@@ -73,8 +73,11 @@
                                           "%b"))))
 
 ;; use zenburn as the default theme
-;; (load-theme 'zenburn t)
-(load-theme 'twilight-anti-bright t)
+; Not sure what happened here, zenburn just disappeared from
+; MELPA suddenly.  But I'm getting it from github and dropping
+; it into ~/.emacs.d/themes, so carry on.
+(load-theme 'zenburn t)
+;(load-theme 'twilight-anti-bright t)
 
 (provide 'prelude-ui)
 ;;; prelude-ui.el ends here

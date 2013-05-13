@@ -32,7 +32,7 @@
 ;; Boston, MA 02110-1301, USA.
 
 ;;; Code:
-
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (message "Prelude is powering up... Be patient, Master %s!" (getenv "USER"))
 
 (scroll-bar-mode -1)
