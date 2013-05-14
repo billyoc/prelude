@@ -32,6 +32,20 @@
 ;; Boston, MA 02110-1301, USA.
 
 ;;; Code:
+(add-to-list 'load-path "~/src/bbdb/lisp")
+(require 'bbdb-loaddefs)
+(require 'bbdb)
+(setq bbdb-pop-up-window-size 3)
+(setq bbdb-mua-pop-up-window-size 3)
+(bbdb-initialize 'gnus 'message)
+(bbdb-mua-auto-update-init 'gnus 'message)
+(setq bbdb-mua-update-interactive-p '(query . create))
+(setq bbdb-message-all-addresses t)
+(add-hook
+ 'gnus-summary-mode-hook
+ (lambda ()
+   (define-key gnus-summary-mode-map (kbd ";") 'bbdb-mua-edit-field)
+   ))
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (message "Prelude is powering up... Be patient, Master %s!" (getenv "USER"))
 
